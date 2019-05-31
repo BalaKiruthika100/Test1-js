@@ -1,0 +1,10 @@
+function fn()
+{
+  if(true)
+    {
+       a="JS";
+    }
+  console.log(a);
+  alert(a);
+}
+fn()
