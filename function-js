@@ -1,8 +1,8 @@
 function fn()
 {
   a="Welcome";
-  if(true)
-    {
+  if(false)//if is false returns outer value or undefined
+    {           //else it returns inner value 
        a="JS";
     }
   console.log(a);
