@@ -1,0 +1,7 @@
+var obj={name:"abcd",
+        dept:"IT"};
+var key="name";
+var key1="dept";
+alert(obj[key]);//to display the values
+alert(obj[key1]);//to display the values
+console.log(obj[key]);
