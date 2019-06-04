@@ -1,0 +1,10 @@
+function greetme(cb){
+  settimeout(function(){
+    var databaseresult=1;
+    cb(databaseresult);
+  },500);
+  
+}
+
+
+
