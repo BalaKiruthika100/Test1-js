@@ -9,3 +9,34 @@ function fn()
   alert(a);
 }
 fn()
+
+
+//more than one function
+
+var addOneToResult = function(result, fn) {
+
+    fn(result + 1, addThreeToResult);
+
+};
+
+
+
+var addTwoToResult = function(result, fn) {
+
+    fn(result + 2,addThreeToResult);
+
+};
+
+
+
+var addThreeToResult = function(result) {
+
+    var output = result + 3;
+
+    console.log(output);
+
+};
+
+
+
+grettme(addOneToResult);
