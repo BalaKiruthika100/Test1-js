@@ -40,3 +40,18 @@ var addThreeToResult = function(result) {
 
 
 grettme(addOneToResult);
+
+
+
+//function length
+function func1() {}
+
+function func2(a, b) {}
+
+console.log(func1.length);
+// expected output: 0
+alert(func1.length)
+
+console.log(func2.length);
+// expected output: 2
+alert(func2.length)
