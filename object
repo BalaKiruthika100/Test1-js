@@ -1,5 +1,7 @@
 var obj={name:"abcd",
         dept:"IT"};
+var obj1=obj;
+obj1.name="welcome";
 var key="name";
 var key1="dept";
 alert(obj[key]);//to display the values
