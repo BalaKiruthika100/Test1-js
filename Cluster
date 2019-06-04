@@ -1,0 +1,9 @@
+var fun1=function(arg1){
+  var var1=' js';
+  return function(){
+    console.log('Welcome'+arg1+var1);
+    alert('Welcome'+arg1+var1)//to display the values
+  };
+}
+var result=fun1(' to');
+console.log(result());
