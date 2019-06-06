@@ -1,0 +1,18 @@
+class Person{
+  getname(){
+    console.log("inside getname");
+  }
+}
+class girl extends Person{
+  getname1(){
+    console.log("Inside getname1");
+  }
+}
+
+const instance=new girl();
+console.log(instance.getname());
+
+//OUTPUT
+//"inside getname"
+//undefined
+//undefined
