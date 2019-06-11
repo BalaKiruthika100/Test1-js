@@ -9,3 +9,10 @@ var min = Math.min.apply(null, numbers);
 
 console.log(min);
 // expected output: 2
+
+
+//Using apply to append an array to another
+var array = ['a', 'b'];
+var elements = [0, 1, 2];
+array.push.apply(array, elements);
+console.info(array); // ["a", "b", 0, 1, 2]
