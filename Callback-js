@@ -6,5 +6,28 @@ function greetme(cb){
   
 }
 
+//
+const add1 = (data, callback) => callback(data+1, finalResult); 
+ 
 
+const add2 = (data, callback) => callback(data+2); 
+ 
+
+const finalResult = (data) => console.log(data); 
+ 
+
+const fn = (callback) => {
+
+ setTimeout(() => {
+
+ callback(500, add2);
+
+ }, 1000);
+
+};
+ 
+
+fn(add1);
+
+//503
 
