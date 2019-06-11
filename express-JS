@@ -1,0 +1,73 @@
+const express = require('express')
+
+const app = express()
+
+ 
+
+app.use(function(req, res, next) {
+
+ if (req.query.token === 'secret') {
+
+ next();
+
+ } else {
+
+ res.send('unauthorized');
+
+ }
+
+});
+
+
+
+
+
+
+ 
+app.get('/doctor', function(req, res, next) {
+
+ console.log('insdie 1');
+
+ next();
+
+}, function (req, res,) {
+ 
+
+ console.log('inside handler');
+
+ res.send({})
+
+});
+ 
+
+app.get('/doctor/:id/:dept', function (req, res) {
+
+ console.log(req.query);
+
+ console.log(req.params);
+
+ res.send(doctors.filter(i => i.id === parseInt(req.params.id)));
+
+ });
+ 
+
+app.post('/doctor', function (req, res) {
+
+ doctors.push({ name: 'New Doctor' });
+
+ res.send('Inserted')
+
+ });
+ 
+
+app.delete('/doctor', function (req, res) {
+
+ doctors = [];
+
+ res.send('Deleted successful')
+
+});
+
+ 
+
+app.listen(3000)
